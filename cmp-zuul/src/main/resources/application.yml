@@ -1,0 +1,42 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8666/eureka/
+server:
+  port: 8743
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /cmp-manage-service/**
+      serviceId: cmp-manage-service
+    api-b:
+      path: /cmp-merchant-service/**
+      serviceId: cmp-merchant-service
+    api-c:
+      path: /cmp-client-service/**
+      serviceId: cmp-client-service
+  socket-timeout-millis: 12000
+  connect-timeout-millis: 12000
+
+
+
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
+ribbon:
+  ReadTimeout: 12000
+  ConnectTimeout: 12000
+  eureka:
+     enabled: true
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sd.cmp.service.dao.TAreaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="sd.cmp.facade.model.TArea">
+        <id column="id" property="id" />
+        <result column="pro_number" property="proNumber" />
+        <result column="pro_name" property="proName" />
+        <result column="city_number" property="cityNumber" />
+        <result column="city_name" property="cityName" />
+        <result column="area_number" property="areaNumber" />
+        <result column="area_name" property="areaName" />
+        <result column="address" property="address" />
+        <result column="address_name" property="addressName" />
+        <result column="is_show" property="isShow" />
+        <result column="serial_num" property="serialNum" />
+        <result column="city_serialno" property="citySerialno" />
+        <result column="creater" property="creater" />
+        <result column="updater" property="updater" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+</mapper>

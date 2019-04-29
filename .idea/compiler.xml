@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cmp-background-facade" />
+        <module name="cmp-background-service" />
+        <module name="cmp-client-facade" />
+        <module name="cmp-client-service" />
+        <module name="cmp-commom-config" />
+        <module name="cmp-common-bean" />
+        <module name="cmp-common-util" />
+        <module name="cmp-facade-web" />
+        <module name="cmp-manage-facade" />
+        <module name="cmp-manage-service" />
+        <module name="cmp-merchant-facade" />
+        <module name="cmp-merchant-service" />
+        <module name="cmp-pub-service" />
+        <module name="cmp-zuul" />
+        <module name="eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="cmp-background-facade" target="1.8" />
+      <module name="cmp-background-manage" target="1.5" />
+      <module name="cmp-background-service" target="1.8" />
+      <module name="cmp-common-redis" target="1.5" />
+      <module name="cmp-facade-web" target="1.5" />
+      <module name="cmp-service-pub" target="1.5" />
+      <module name="cmp-web-manage" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sd.cmp.service.dao.TContractMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="sd.cmp.facade.model.TContract">
+        <id column="id" property="id" />
+        <result column="contract_no" property="contractNo" />
+        <result column="contract_name" property="contractName" />
+        <result column="settlement_type" property="settlementType" />
+        <result column="total_amount" property="totalAmount" />
+        <result column="begin_time" property="beginTime" />
+        <result column="end_time" property="endTime" />
+        <result column="contract_type" property="contractType" />
+        <result column="contract_content" property="contractContent" />
+        <result column="is_show" property="isShow" />
+        <result column="is_status" property="isStatus" />
+        <result column="chain_code" property="chainCode" />
+        <result column="payee_name" property="payeeName" />
+        <result column="bank_account" property="bankAccount" />
+        <result column="bank_type" property="bankType" />
+        <result column="type" property="type" />
+        <result column="type_id" property="typeId" />
+        <result column="create_time" property="createTime" />
+        <result column="creater" property="creater" />
+        <result column="update_time" property="updateTime" />
+        <result column="updater" property="updater" />
+        <result column="time" property="time" />
+        <result column="remark" property="remark" />
+        <result column="is_history" property="isHistory" />
+        <result column="credit_code" property="creditCode" />
+        <result column="id_number" property="idNumber" />
+    </resultMap>
+
+</mapper>

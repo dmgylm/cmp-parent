@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cmp-client-web/cmp-client-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-client-web/cmp-client-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-common/cmp-commom-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-common/cmp-common-bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-common/cmp-common-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-common/cmp-common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-manage-web/cmp-manage-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-manage-web/cmp-manage-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-merchant-web/cmp-merchant-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-merchant-web/cmp-merchant-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-pub-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cmp-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
+  </component>
+</project>

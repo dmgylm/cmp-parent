@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.sd.cmp.parent</groupId>
+	<artifactId>cmp-common-parent</artifactId>
+	<version>develop-1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+
+	<!-- 全局属性配置 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>${cmp-repository-url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>${cmp-snapshotRepository-url}</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>releases</id>
+			<url>${cmp-repository-url}</url>
+		</repository>
+		<repository>
+			<id>thirdparty</id>
+			<url>${cmp-thirdtRepository-url}</url>
+		</repository>
+	</repositories>
+
+
+
+	<properties>
+		<!-- 环境变量 develop | integration-->
+		<JAVA_ENV>develop</JAVA_ENV>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cmp-repository-url>http://192.168.1.147:8468/nexus/content/repositories/releases/</cmp-repository-url>
+		<cmp-snapshotRepository-url>http://192.168.1.147:8468/nexus/content/repositories/snapshots/</cmp-snapshotRepository-url>
+		<cmp-thirdtRepository-url>http://192.168.1.147:8468/nexus/content/repositories/thirdparty/</cmp-thirdtRepository-url>
+		<mybatisplus.boot.version>2.1.9</mybatisplus.boot.version>
+		<pagehelper.version>1.1.1</pagehelper.version>
+		<mybatisplus.version>3.0.7.1</mybatisplus.version>
+		<cmp-client-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-facade.version>
+		<cmp-client-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-service.version>
+		<cmp-manage-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-manage-facade.version>
+		<cmp-manage-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-manage-service.version>
+		<cmp-merchant-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-merchant-facade.version>
+		<cmp-merchant-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-merchant-service.version>
+		<cmp-common-config.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-config.version>
+		<cmp-common-util.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-util.version>
+		<cmp-common-bean.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-bean.version>
+		<cmp-pub-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-pub-service.version>
+
+	</properties>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<!-- 忽略自带的日志框架. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>${mybatisplus.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus</artifactId>
+			<version>${mybatisplus.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-generator</artifactId>
+			<version>${mybatisplus.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.46</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+		<!-- 模板引擎 代码生成 -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+		<!-- Spring Boot Dubbo 依赖 -->
+		<dependency>
+			<groupId>com.alibaba.spring.boot</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<!--zookeeper依赖 -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.8</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			 <artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+
+
+
+
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<!-- build -->
+	<build>
+		<outputDirectory>target/classes</outputDirectory>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<includes>
+							<include>**/Tests*.java</include>
+						</includes>
+					</configuration>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.5</version>
+					<executions>
+						<execution>
+							<id>default-resources</id>
+							<phase>process-resources</phase>
+							<goals>
+								<goal>resources</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>default-testResources</id>
+							<phase>process-test-resources</phase>
+							<goals>
+								<goal>testResources</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.0.2</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				<!--<plugin>
+					<groupId>org.sonarsource.scanner.maven</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>-->
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

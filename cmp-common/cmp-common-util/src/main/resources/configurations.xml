@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<configuration>
+	<common>
+		<key>AUTOSHENGDA</key><!-- 请求秘钥值 -->
+	</common>
+	<!-- 百度地图配置 -->
+	<baiduMap>
+	    <!-- 获取城市 -->
+	    <cityUrl>http\://api.map.baidu.com/geocoder/v2/?</cityUrl>
+	    <!-- ak.code百度地图秘钥 -->
+		<ak>3YOCg7ZoHfhOLxtsTDpMVuPs</ak>
+		<callback>3YOCg7ZoHfhOLxtsTDpMVuPs</callback>
+		<!-- 查询地区 -->
+		<searchlocation>http://api.map.baidu.com/place/search?</searchlocation>
+	</baiduMap>
+</configuration>

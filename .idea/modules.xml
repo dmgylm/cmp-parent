@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cmp-background-manage/cmp-background-facade/cmp-background-facade.iml" filepath="$PROJECT_DIR$/cmp-background-manage/cmp-background-facade/cmp-background-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmp-background-manage/cmp-background-service/cmp-background-service.iml" filepath="$PROJECT_DIR$/cmp-background-manage/cmp-background-service/cmp-background-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmp-web-manage/cmp-facade-web/cmp-facade-web.iml" filepath="$PROJECT_DIR$/cmp-web-manage/cmp-facade-web/cmp-facade-web.iml" />
+    </modules>
+  </component>
+</project>
