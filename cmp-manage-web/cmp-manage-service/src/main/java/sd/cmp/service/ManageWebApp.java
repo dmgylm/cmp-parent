@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 						"sd.cmp.config.redis"})
 @EnableApolloConfig({"application","CGJ.mysql","CGJ.dubbo","CGJ.redis.springboot"})
 public class ManageWebApp {
-	public static void main(String[] args) {
-		SpringApplication.run(ManageWebApp.class, args);
+	public static void main(String[] args) { SpringApplication.run(ManageWebApp.class, args);
 	}
 }
