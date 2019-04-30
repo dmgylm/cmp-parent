@@ -7,11 +7,11 @@ server:
   #当前服务端口号
   port: 8764
   servlet:
-    context-path: /cmp-merchant-service/
+    context-path: /cmp-pub-service/
 spring:
   application:
     #当前应用名称
-    name: cmp-merchant-service
+    name: cmp-pub-service
 #  profiles:
 #    active: dev
 #  datasource:
@@ -40,7 +40,7 @@ spring:
 
   dubbo:
     application:
-        name: cmp-service-merchant
+        name: cmp-service-pub
   #注册中心地址
     protocol:
         name: dubbo

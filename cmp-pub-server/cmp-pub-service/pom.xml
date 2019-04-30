@@ -10,15 +10,20 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sd.cmp</groupId>
-	<artifactId>cmp-merchant-service</artifactId>
-	<version>${cmp-merchant-service.version}</version>
-	<packaging>jar</packaging>
+	<artifactId>cmp-pub-service</artifactId>
+	<version>${cmp-pub-service.version}</version>
+
 
 	<dependencies>
 		<dependency>
 			<groupId>sd.cmp</groupId>
 			<artifactId>cmp-commom-config</artifactId>
 			<version>${cmp-common-config.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>sd.cmp</groupId>
+			<artifactId>cmp-pub-facade</artifactId>
+			<version>${cmp-pub-facade.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -92,4 +97,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

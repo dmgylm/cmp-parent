@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @EnableDubboConfiguration
-@EnableEurekaClient
 @EnableTransactionManagement
 @ComponentScan(value = {"sd.cmp.service","sd.cmp.config.cat",
 						"sd.cmp.config.datasource","sd.cmp.config.plus",

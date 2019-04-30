@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 		"sd.cmp.config.datasource","sd.cmp.config.plus","sd.cmp.config.redis"})
 @EnableTransactionManagement
 @EnableApolloConfig({"application","CGJ.mysql","CGJ.dubbo","CGJ.redis.springboot"})
-public class MerchantApp {
+public class PubServerApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(MerchantApp.class, args);
+		SpringApplication.run(PubServerApplication.class, args);
 	}
 }

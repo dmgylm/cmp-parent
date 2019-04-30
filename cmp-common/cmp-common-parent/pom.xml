@@ -52,17 +52,15 @@
 		<pagehelper.version>1.1.1</pagehelper.version>
 		<mybatisplus.version>3.0.7.1</mybatisplus.version>
 		<elastic-job.version>2.1.5</elastic-job.version>
-		<cmp-client-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-facade.version>
 		<cmp-client-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-service.version>
-		<cmp-manage-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-manage-facade.version>
 		<cmp-manage-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-manage-service.version>
-		<cmp-merchant-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-merchant-facade.version>
 		<cmp-merchant-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-merchant-service.version>
 		<cmp-common-config.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-config.version>
 		<cmp-common-util.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-util.version>
 		<cmp-common-bean.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-bean.version>
 		<cmp-pub-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-pub-service.version>
 		<cmp-common-job.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-job.version>
+		<cmp-pub-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-pub-facade.version>
 	</properties>
 
 

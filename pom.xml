@@ -11,11 +11,9 @@
     <modules>
         <module>cmp-common</module>
 		<module>cmp-merchant-web</module>
-		<module>eureka</module>
-		<module>cmp-zuul</module>
 		<module>cmp-client-web</module>
 		<module>cmp-manage-web</module>
-		<module>cmp-pub-service</module>
+		<module>cmp-pub-server</module>
 	</modules>
 
 <!--

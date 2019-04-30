@@ -10,11 +10,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sd.cmp</groupId>
-	<artifactId>cmp-merchant-web</artifactId>
+	<artifactId>cmp-pub-server</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<modules>
-		<module>cmp-merchant-service</module>
+		<module>cmp-pub-facade</module>
+		<module>cmp-pub-service</module>
 	</modules>
 
 

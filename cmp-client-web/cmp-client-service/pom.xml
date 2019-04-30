@@ -17,11 +17,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>sd.cmp</groupId>
-			<artifactId>cmp-client-facade</artifactId>
-			<version>${cmp-client-facade.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>sd.cmp</groupId>
 			<artifactId>cmp-commom-config</artifactId>
 			<version>${cmp-common-config.version}</version>
 		</dependency>
