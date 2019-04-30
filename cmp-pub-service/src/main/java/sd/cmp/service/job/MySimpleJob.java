@@ -10,7 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 @Slf4j
 @ElasticJobConf(name = "MySimpleJob", cron = "0/10 * * * * ?",
-		shardingItemParameters = "0=0", description = "简单任务", eventTraceRdbDataSource = "dataSource")
+		shardingItemParameters = "0=0", description = "简单任务",
+		eventTraceRdbDataSource = "dataSource")
 public class MySimpleJob implements SimpleJob {
 
 	@Override

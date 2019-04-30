@@ -18,6 +18,7 @@
 		<module>cmp-common-util</module>
 		<module>cmp-common-bean</module>
 		<module>cmp-commom-config</module>
+		<module>cmp-common-job</module>
 	</modules>
 
 

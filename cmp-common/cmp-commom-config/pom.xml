@@ -68,34 +68,10 @@
 			<version>0.0.6</version>
 		</dependency>
 
-		<!--elastic job -->
-		<!--框架核心jar包-->
-
-		<!-- 引入elastic-job-lite核心模块 -->
-		<dependency>
-			<groupId>com.github.yinjihuan</groupId>
-			<artifactId>elastic-job-spring-boot-starter</artifactId>
-			<version>1.0.4</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
-		<dependency>
-			<groupId>org.apache.curator</groupId>
-			<artifactId>curator-recipes</artifactId>
-			<version>4.2.0</version>
-		</dependency>
-
-
 	</dependencies>
 
 
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+
 	<build>
 		<plugins>
 			<plugin>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.sd.cmp.parent</groupId>
+		<artifactId>cmp-common-parent</artifactId>
+		<version>develop-1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>sd.cmp</groupId>
+	<artifactId>cmp-common-job</artifactId>
+	<version>${cmp-common-job.version}</version>
+
+	<dependencies>
+		<!-- 引入elastic-job-lite核心模块 -->
+		<dependency>
+			<groupId>com.github.yinjihuan</groupId>
+			<artifactId>elastic-job-spring-boot-starter</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+</project>

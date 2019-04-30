@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableElasticJob
 @EnableTransactionManagement
 @ComponentScan(value = {"sd.cmp.service","sd.cmp.config.cat",
-		"sd.cmp.config.datasource","sd.cmp.config.plus","sd.cmp.config.redis",
-       "sd.cmp.config.elasticJob"})
+		"sd.cmp.config.datasource","sd.cmp.config.plus","sd.cmp.config.redis"})
 @EnableApolloConfig({"application","CGJ.mysql","CGJ.dubbo","CGJ.redis.springboot"})
 public class PubServiceApplication {
 	public static void main(String[] args) {

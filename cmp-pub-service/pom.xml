@@ -25,6 +25,11 @@
 		<artifactId>cmp-commom-config</artifactId>
 		<version>${cmp-common-config.version}</version>
 	</dependency>
+		<dependency>
+			<groupId>sd.cmp</groupId>
+			<artifactId>cmp-common-job</artifactId>
+			<version>${cmp-common-job.version}</version>
+		</dependency>
 	</dependencies>
 
 

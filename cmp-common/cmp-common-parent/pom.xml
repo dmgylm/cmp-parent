@@ -62,7 +62,7 @@
 		<cmp-common-util.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-util.version>
 		<cmp-common-bean.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-bean.version>
 		<cmp-pub-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-pub-service.version>
-
+		<cmp-common-job.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-common-job.version>
 	</properties>
 
 
