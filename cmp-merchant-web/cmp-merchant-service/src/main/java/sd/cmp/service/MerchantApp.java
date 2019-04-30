@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableTransactionManagement
 @EnableApolloConfig({"application","CGJ.mysql","CGJ.dubbo","CGJ.redis.springboot"})
 public class MerchantApp {
+
 	public static void main(String[] args) {
 		SpringApplication.run(MerchantApp.class, args);
 	}
