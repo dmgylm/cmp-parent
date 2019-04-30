@@ -14,6 +14,7 @@
 	<version>${cmp-common-config.version}</version>
 	<packaging>jar</packaging>
 
+
 	<dependencies>
 		<!-- Spring Boot Redis依赖 -->
 		<!-- 注意：1.5版本的依赖和2.0的依赖不一样，注意看哦 1.5我记得名字里面应该没有“data”, 2.0必须是“spring-boot-starter-data-redis” 这个才行-->
@@ -67,7 +68,34 @@
 			<version>0.0.6</version>
 		</dependency>
 
+		<!--elastic job -->
+		<!--框架核心jar包-->
+
+		<!-- 引入elastic-job-lite核心模块 -->
+		<dependency>
+			<groupId>com.github.yinjihuan</groupId>
+			<artifactId>elastic-job-spring-boot-starter</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
+
 	</dependencies>
+
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>

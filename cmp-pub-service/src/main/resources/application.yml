@@ -115,3 +115,9 @@ logging:
   level:
      sd.cmp.service.dao : debug
 
+
+elastic:
+  job:
+     zk:
+       serverLists: ${dubbo.registry.address}
+       namespace: ${spring.application.name}-job

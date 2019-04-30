@@ -51,6 +51,7 @@
 		<mybatisplus.boot.version>2.1.9</mybatisplus.boot.version>
 		<pagehelper.version>1.1.1</pagehelper.version>
 		<mybatisplus.version>3.0.7.1</mybatisplus.version>
+		<elastic-job.version>2.1.5</elastic-job.version>
 		<cmp-client-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-facade.version>
 		<cmp-client-service.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-client-service.version>
 		<cmp-manage-facade.version>${JAVA_ENV}-1.0-SNAPSHOT</cmp-manage-facade.version>
